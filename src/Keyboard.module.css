@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "StickFigures";
+    src: local("StickFigures"),
+        url("./StickFigures-ppeO.ttf") format("truetype");
+}
+.header {
+    font-family: "StickFigures";
+    font-size: 7rem;
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    text-align: center;
+}
+.wrapper {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 4rem;
+    display: flex;
+    z-index: 1;
+}
+
+.btn {
+    width: 100%;
+    border: 3px solid black;
+    background: none;
+    aspect-ratio: 1/1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.btn.active {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
+.btn.inactive {
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+}
